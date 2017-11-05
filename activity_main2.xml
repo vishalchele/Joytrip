@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:background="@drawable/images"
+
+    tools:context="com.vish.vishal.tripmakers.Main2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Joytrip"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="123dp"
+        android:layout_height="40dp"
+        android:entries="@array/Country_array"
+        android:prompt="@string/Country_prompt"
+        tools:layout_editor_absoluteY="53dp"
+        tools:layout_editor_absoluteX="161dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Map"
+        tools:layout_editor_absoluteY="340dp"
+        tools:layout_editor_absoluteX="143dp"
+        android:layout_marginBottom="34dp"
+        android:layout_above="@+id/button3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="49dp"
+        android:layout_height="31dp"
+        android:text="Days"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        tools:textColor="@android:color/background_dark"
+        tools:layout_editor_absoluteY="205dp"
+        tools:layout_editor_absoluteX="64dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_alignTop="@+id/editText"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="77dp"
+        android:layout_height="38dp"
+        android:text="Select City"
+        tools:textColor="@android:color/background_dark"
+        tools:layout_editor_absoluteY="55dp"
+        tools:layout_editor_absoluteX="57dp"
+        android:layout_marginBottom="64dp"
+        android:layout_above="@+id/textView"
+        android:layout_toLeftOf="@+id/b1"
+        android:layout_toStartOf="@+id/b1" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b1"
+        android:layout_alignEnd="@+id/spinner1"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_alignRight="@+id/spinner1"
+        android:layout_alignStart="@+id/spinner1"
+        android:layout_marginBottom="56dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="114dp"
+        android:text="BOOKING"
+        android:onClick="weblink1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
